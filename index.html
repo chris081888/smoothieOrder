@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uncle Chris and Auntie Shannon's Smoothie Order Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/smoothie.css">
+</head>
+<body>
+    <h1>Uncle Chris and Auntie Shannon's Smoothie Order Form</h1>
+    <div class="container">
+        <form id="smoothieForm">
+            <label for="flavor">Choose your flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="strawberry">Strawberry</option>
+                <option value="berry">Banana</option>
+                <option value="mixed berry">Mixed Berry</option>
+                <option value="mango">Mango</option>
+                <option value="blueberry">Blueberry</option>
+                <option value="peach">Peach</option>
+            </select>
+            <br>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="child sized">Child</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Oh No! sized">Oh No!</option>
+            </select>
+            <br>
+
+            <label for="extras">Extras:</label>
+            <div class="extra-option">
+                <input type="checkbox" id="protein" name="extras" value="protein">
+                <label for="protein">Protein - 1.99</label>
+            </div>
+            <div class="extra-option">
+                <input type="checkbox" id="vitamins" name="extras" value="vitamins">
+                <label for="vitamins">Vitamins - 1.99</label>
+            </div>
+            <div class="extra-option">
+                <input type="checkbox" id="energyBoost" name="extras" value="energy boost">
+                <label for="energyBoost">Energy Boost - 2.99</label>
+            </div>
+            <div class="extra-option">
+                <input type="checkbox" id="chiaSeeds" name="extras" value="chia seeds">
+                <label for="chiaSeeds">Chia Seeds - 0.99</label>
+            </div>
+            <div class="extra-option">
+                <input type="checkbox" id="honey" name="extras" value="honey">
+                <label for="honey">Honey - 0.99</label>
+            </div>
+            <div class="extra-option">
+                <input type="checkbox" id="almondMilk" name="extras" value="almond milk">
+                <label for="almondMilk">Almond Milk - 2.99</label>
+            </div>
+            <br>
+
+            <button type="button" id="orderButton">Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+
+        <div id="flavorImageContainer">
+            <img id="flavorImage" src="/img/strawberry.jpg" alt="Flavor Image">
+        </div>
+    </div>
+
+    <script src="/js/smoothie.js"></script>
+</body>
+</html>
